@@ -11,9 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Marcin Kummer
+
         findViewById<Button>(R.id.button).setOnClickListener {
-            var haslo = findViewById<TextInputEditText>(R.id.Haslo).text.toString()
-            var potwierdz = findViewById<TextInputEditText>(R.id.Potwierdz).text.toString()
+            val haslo = findViewById<TextInputEditText>(R.id.Haslo).text.toString()
+            val potwierdz = findViewById<TextInputEditText>(R.id.Potwierdz).text.toString()
 
             if( haslo==potwierdz){
                 findViewById<TextView>(R.id.textView).text="Hasla sa zgodne"
